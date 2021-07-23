@@ -25,8 +25,14 @@ namespace HelloWorld
             {
                 Console.WriteLine("Howdy, Y'all!");
             }
-            
-            Console.ReadKey(); // What happens if you run the app without this line?
+
+            Console.WriteLine("What is your name?");
+            string userName = Console.ReadLine();
+            Console.WriteLine($"Hello, {userName}.");
+
+            Console.WriteLine("What is your favorite color?");
+            string color = Console.ReadLine();
+            Console.WriteLine($"Would you like to have a {color} triceratops?");
             
             var animals = new string[] { "Triceratops", "Gorilla", "Corgi", "Toucan" };
             foreach(var animal in animals)
